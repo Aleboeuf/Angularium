@@ -1,0 +1,22 @@
+<ngx-simplebar class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div id="inner" >
+        <div class="logo-container">
+            <button class="logo" (click)="toggleCollapse()"><img src="../../assets/images/angularium-logo-633x680.png" width="40" height="40"></button>
+            <div class="logo-text" @fadeInOut *ngIf="!collapsed">Angularium</div>
+        </div>
+        <ul class="sidenav-nav">
+            <li class="sidenav-nav-item" *ngFor="let data of navData">
+                <a class="sidenav-nav-link" [routerLink]="[data.routeLink]" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <i class="sidenav-link-icon" [class]="data.icon"></i>
+                    <span class="sidenav-link-text" @fadeInOut *ngIf="!collapsed">
+                        {{data.label}}
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <button class="toggle-button" [ngClass]="collapsed ? 'toggle-button-collapsed': ''" (click)="toggleCollapse()">
+        <i class="toggle-button-icon fas fa-angle-left" [ngClass]="collapsed ? 'toggle-button-icon-collapsed': ''"></i>
+    </button>
+</ngx-simplebar>

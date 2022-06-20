@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* CUSTOM */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "shared/scss/_colors.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-background-color;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: $secondary-background-color;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem $secondary-background-color;
+
+    .card-head {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid $primary-color;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $primary-color;
+    }
+
+    .card-body {
+        padding: 1rem 1.5rem; 
+    }
+}
+
+
+
+/* Scrollbar style on Chrome/Edge/Safari/Opera */
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: $secondary-background-color;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid $secondary-background-color;
+    /* creates padding around scroll thumb */
+}
