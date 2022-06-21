@@ -1,23 +1,28 @@
-<div class="top-container">
-    <h1>Top Container</h1>
-</div>
-
-<div class="header" [ngClass]="isHeaderSticky ? 'sticky': ''" #header>
-    <span class="header-title">Header</span>
-</div>
+<mat-toolbar class="sticky-toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Toolbar</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>bug_report</mat-icon>
+    </button>
+</mat-toolbar>
 
 <div class="content">
     <div class="card">
-        <div class="card-head">On Scroll Sticky Header</div>
+        <div class="card-head">Sticky Toolbar
+        </div>
         <div class="card-body">
-            <p>The header will stick to the top when you reach its scroll position.</p>
-            <p>Scroll back up to remove the sticky effect.</p>
+            <p>The toolbar will stick to the top whenever you scroll.</p>
         </div>
     </div>
 
     <div class="card">
         <div class="card-body">
-
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
                 concludaturque
                 et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert

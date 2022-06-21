@@ -3,15 +3,19 @@
 
 .top-container {
     background-color: $primary-background-color;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
   }
   
 .header {
-    padding: 3em;
+    padding: 2em 3em 2em 3em;
     background: $light-primary-color;
     color: $primary-background-color;
+    position: sticky;
+}
 
+.header-title {
+    font-size: x-large;
 }
 
 .content {

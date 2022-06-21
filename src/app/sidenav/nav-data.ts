@@ -8,7 +8,12 @@ export const navbarData = [
     },
     {
         routeLink: 'stickheader',
-        icon: 'fal fa-horizontal-rule',
+        icon: 'fal fa-browser',
         label: 'Sticky Header'
+    },
+    {
+        routeLink: 'mattoolbarsticky',
+        icon: 'fal fa-browser',
+        label: 'Sticky Material Toolbar'
     }
 ];

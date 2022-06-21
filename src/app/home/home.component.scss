@@ -1,3 +1,38 @@
-.container {
+@import "../../shared/scss/_colors.scss";
+
+.header {
+    width: 100%;
+    background-color: $alternative-background-color;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
+    color: $secondary-text-color;
+
+    h1 {
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+}
+
+.header-text {
+    color: $primary-text-color;
+}
+
+.content {
     padding: 3em;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+}
+
+#blurred {
+    position: absolute;
+    z-index: 0;
+    filter: blur(50px);
+}
+
+#cover {
+    z-index: 1;
+    position: relative;
 }
