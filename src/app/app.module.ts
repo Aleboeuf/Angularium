@@ -8,13 +8,15 @@ import { BodyComponent } from './body/body.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 import { SimplebarAngularModule } from 'simplebar-angular';
+import { StickheaderComponent } from './stickheader/stickheader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
     SidenavComponent,
-    HomeComponent
+    HomeComponent,
+    StickheaderComponent
   ],
   imports: [
     BrowserModule,

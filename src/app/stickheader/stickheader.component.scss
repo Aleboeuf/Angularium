@@ -1,0 +1,31 @@
+@import "../../shared/scss/_colors.scss";
+
+
+.top-container {
+    background-color: $primary-background-color;
+    padding: 100px;
+    text-align: center;
+  }
+  
+.header {
+    padding: 3em;
+    background: $light-primary-color;
+    color: $primary-background-color;
+
+}
+
+.content {
+    padding: 3em;
+    background: $primary-background-color;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h3, p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
